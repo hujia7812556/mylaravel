@@ -20,14 +20,3 @@ Route::get('time', function()
 {
     return "现在时间:".date("Y-m-d H:i:s");
 });
-
-Route::group(array('domain' => 'jia.hu.com'), function()
-{
-
-	Route::get('/', function($account, $id)
-	{
-		//
-		return "现在时间:".date("Y-m-d H:i:s");
-	});
-
-});
